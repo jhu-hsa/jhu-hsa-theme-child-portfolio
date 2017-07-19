@@ -1,16 +1,5 @@
 <?php
 
-// Parent theme css
-function theme_enqueue_styles() {
-    wp_enqueue_style( 'parent-bower', get_template_directory_uri() . '/css/style-bower.css' );
-/* add this */
-wp_enqueue_style( 'parent-theme-style', get_template_directory_uri() . '/css/style.css' );
-wp_enqueue_style( 'custom-theme-style', get_template_directory_uri() . '/css/portfolio-styles.css' );
-
-
-}
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
 /* child theme styles */
 function child_scripts_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri(). '/style.css');

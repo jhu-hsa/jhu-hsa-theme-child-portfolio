@@ -10,5 +10,44 @@
 	/* @import '/css/style-bower.css';
 	@import '/css/style.css'; */
 	
-	
+	.main div.elementsToFilter{text-align: center;
+padding-bottom:1rem;}
+
+.main div.elementsToFilter a.sortasc:after{ 
+   content: '\f063';
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-style: normal;
+   margin:0px 0px 0px 10px;
+   text-decoration:none;
+
+} 
+.main div.elementsToFilter a.sortdsc:after{ 
+   content: '\f062';
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-style: normal;
+   margin:0px 0px 0px 10px;
+   text-decoration:none;
+
+} 
+
+/* special custom field posts */
+.post-group{text-align:center;}
+.post-group strong{padding-right:1rem;}
+.post-tags {
+
+}
+.post-tags a:link, .post-tags a:visited {
+    font-size: 1rem;
+   
+    white-space: nowrap;
+}
+.post-tags::after{content: ' | ';
+padding:1rem;}
+.post-tags:last-child::after{ content: '';}
+
+.feed > ul.equipment-rental > li::before, .feed .wrap > ul.equipment-rental > li::before {
+    display: none;
+} 
 
